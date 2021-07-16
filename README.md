@@ -79,6 +79,8 @@ Example workflow is to use the html cloning interface to GitHub:
         c196f81..ad6c67b  main -> main
 
 
+To leave the RSP instance, do `File->Save All, Exit, and Logout`.
+
 ## AFW Documentation
 
 Refer to the [AFW Documentation](https://pipelines.lsst.io/modules/lsst.afw.display/index.html) for information on the AFW datasets.
