@@ -34,3 +34,51 @@ If these notebooks are used for a journal publication, please consider adding an
 **Contributions**
 
 Want to contribute a tutorial? Contact Melissa Graham via direct message at https://Community.lsst.org.
+
+# RSP Workflow
+
+How to use the RSP for DP0, including cloning notebooks, pushing changes to notebooks, etc.
+
+
+## Main Documentation
+
+The main documentation is at [https://dp0-1.lsst.io/](https://dp0-1.lsst.io/). The main [DP0 Delegate home page](https://dp0-1.lsst.io/dp0-delegate-resources/index.html) provides links to resources including the RSP instance link.
+
+## RSP Instance
+
+To launch the RSP interface, click [http://data.lsst.cloud/](http://data.lsst.cloud/).
+
+## Workflow for GitHub hosted notebooks.
+
+The [DP0 tutorial notebooks](https://github.com/rubin-dp0/tutorial-notebooks) are present on the RSP instances in `~/notebooks/tutorial-notebooks/`.
+
+Change the git configuration if needed:
+
+    $ git config --global user.email "brant@ucsc.edu"
+    $ git config --global user.name "Brant Robertson"
+
+
+Example workflow is to use the html cloning interface to GitHub:
+
+    $ cd github
+    $ git clone https://github.com/brantr/tutorial-notebooks.git
+    $ [make changes to notebooks]
+    $ git add [New notebook]
+    $ git commit [Add messages]
+    $ git push
+    Username for 'https://github.com': brantr
+    Password for 'https://brantr@github.com': 
+    Enumerating objects: 4, done.
+    Counting objects: 100% (4/4), done.
+    Delta compression using up to 32 threads
+    Compressing objects: 100% (3/3), done.
+    Writing objects: 100% (3/3), 343 bytes | 343.00 KiB/s, done.
+    Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+    remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+    To https://github.com/brantr/tutorial-notebooks.git
+        c196f81..ad6c67b  main -> main
+
+
+## AFW Documentation
+
+Refer to the [AFW Documentation](https://pipelines.lsst.io/modules/lsst.afw.display/index.html) for information on the AFW datasets.
